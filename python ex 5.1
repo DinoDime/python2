@@ -1,0 +1,20 @@
+count = 0
+total = 0
+
+while True:
+    number = input("Enter a number: ")
+    if number == "done":
+        break
+    try:
+        number = float(number)
+    except:
+        print("Invalid Input")
+        continue
+        
+    print(number)
+
+    count = count + 1
+    total = total + number
+    average = count/total
+
+print(count, total, average)
